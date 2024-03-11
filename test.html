@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .playground {
+            background-color: red;
+            height: 400px;
+            width: 100vw;
+            text-wrap: nowrap;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            scroll-snap-align: center;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+            display: flex; /* Added */
+        }
+        .playground .layout {
+            flex: 1 0 auto; /* Added */
+            display: inline-block;
+            background-color: beige;
+            width: 100%;
+            margin: 4px;
+            height: 100%;
+            border: 2px solid red;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+        .playground .layout:nth-child(2) {
+            background-color: yellowgreen;
+        }
+        .playground .layout:nth-child(3) {
+            background-color: blue;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Style for the active section */
+        .active {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <span onclick="showSection('section1')">Section 1</span>
+        <span onclick="showSection('section2')">Section 2</span>
+        <span onclick="showSection('section3')">Section 3</span>
+    </div>
+    
+    <div class="playground">
+        <div class="layout section1"></div>
+        <div class="layout section2"></div>
+        <div class="layout section3"></div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            // Remove 'active' class from all sections
+            document.querySelectorAll('.playground .layout').forEach(function(el) {
+                el.classList.remove('active');
+            });
+
+            // Add 'active' class to the selected section
+            document.querySelector(`.${section}`).classList.add('active');
+
+            // Scroll the selected section into view
+            document.querySelector(`.${section}`).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>
