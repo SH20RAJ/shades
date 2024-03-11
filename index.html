@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shades</title>
+    <link rel="shortcut icon" href="../assets/sh.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Shade - Social Media Network">
+</head>
+
+<body>
+    <nav>
+        <div class="header">Shades</div>
+        <ul>
+            <a href="#">
+                <li><ion-icon name="home-outline"></ion-icon></li>
+            </a>
+            <a href="#">
+                <li><ion-icon name="search-outline"></ion-icon></li>
+            </a>
+            <a href="#">
+                <li><ion-icon name="contrast-outline"></ion-icon></li>
+            </a>
+            <a href="#">
+                <li><ion-icon name="flame-outline"></ion-icon></li>
+            </a>
+            <a href="#">
+                <li><ion-icon name="person-circle-outline"></ion-icon></li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <div class="posts">
+            <div class="newpost">
+                <div class="p"><textarea name="post" id="" cols="30" placeholder="Create New Post..."
+                        rows="10"></textarea></div>
+                <div class="toolbar">
+                    <ul>
+                        <li><ion-icon name="images-outline"></ion-icon></li>
+                        <li><ion-icon name="videocam-outline"></ion-icon></li>
+                        <li><ion-icon name="podium-outline"></ion-icon></li>
+                        <li><ion-icon name="eye-outline"></ion-icon><ion-icon name="eye-off-outline hidden"></ion-icon>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menubar">
+                <ul>
+                    <li>Latest</li>
+                    <li>Top</li>
+                    <li>Popular</li>
+                </ul>
+            </div>
+            <div class="newposts">
+                <div class="post" id="1">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="name"><span class="tomato">@</span>sh20raj</div>
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <img src="../assets/sh.jpeg" alt="">
+                    </div>
+
+                   
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+
+                    <div class="commentviewer">
+                        <div class="comment">
+                            <span class="author"><img src="../assets/logo.png" alt=""><span><span class="tomato">@</span>sh20raj</span></span>
+                            <span class="content">Hii, It's Just Wonderful Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ipsam. Quia incidunt nam, natus illo possimus eligendi hic animi unde asperiores repellendus eaque nostrum ea quidem tempora. Ea, maiores totam!</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post" id="2">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            What's your Gender!
+                        </p>
+                        <div class="poll">
+                            <div class="container">
+                                <h1 class="poll-question">
+                                  Do you like programming?
+                                </h1>
+                                <form id="poll-form" class="poll-form">
+                                    <label>
+                                        <input type="radio"
+                                               name="vote"
+                                               value="yes"> Yes
+                                    </label>
+                                    <label>
+                                        <input type="radio"
+                                               name="vote"
+                                               value="no"> No
+                                    </label>
+                                    <button type="submit"
+                                            class="vote-button">
+                                      Vote
+                                    </button>
+                                </form>
+                                <div id="results" class="results">
+                                    <h2 class="results-title">
+                                      Results
+                                    </h2>
+                                    <div class="results-count">
+                                        <p>Yes: 
+                                          <span id="yes-count"
+                                                class="count">0
+                                          </span>
+                                        </p>
+                                        <p>No: 
+                                          <span id="no-count"
+                                                     class="count">0
+                                          </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="3">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/apple-icon.webp" alt=""></div>
+                        <div class="name"><span class="tomato">@</span>sh20raj</div>
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                        </p>
+                        <img src="../assets/apple-icon.webp" alt="">
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="4">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="5">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="6">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="1">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="name"><span class="tomato">@</span>sh20raj</div>
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <img src="../assets/sh.jpeg" alt="">
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="2">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            What's your Gender!
+                        </p>
+                        <div class="poll">
+                            <div class="container">
+                                <h1 class="poll-question">
+                                  Do you like programming?
+                                </h1>
+                                <form id="poll-form" class="poll-form">
+                                    <label>
+                                        <input type="radio"
+                                               name="vote"
+                                               value="yes"> Yes
+                                    </label>
+                                    <label>
+                                        <input type="radio"
+                                               name="vote"
+                                               value="no"> No
+                                    </label>
+                                    <button type="submit"
+                                            class="vote-button">
+                                      Vote
+                                    </button>
+                                </form>
+                                <div id="results" class="results">
+                                    <h2 class="results-title">
+                                      Results
+                                    </h2>
+                                    <div class="results-count">
+                                        <p>Yes: 
+                                          <span id="yes-count"
+                                                class="count">0
+                                          </span>
+                                        </p>
+                                        <p>No: 
+                                          <span id="no-count"
+                                                     class="count">0
+                                          </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="3">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/apple-icon.webp" alt=""></div>
+                        <div class="name"><span class="tomato">@</span>sh20raj</div>
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                        </p>
+                        <img src="../assets/apple-icon.webp" alt="">
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="4">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="5">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+                <div class="post" id="6">
+                    <div class="author">
+                        <div class="logo"><img src="../assets/sh.jpeg" alt=""></div>
+                        <div class="details"><span class="tomato">@</span>sh20raj<div class="date">20 minutes ago</div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque in optio, enim vitae cum
+                            at debitis alias obcaecati fuga, expedita sapiente. Recusandae eius odit a autem quibusdam
+                            iure ipsa.
+                        </p>
+                        <!-- <img src="../assets/sh.jpeg" alt=""> -->
+                    </div>
+
+
+                    <div class="post-footer">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="dislike"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                        <div class="comment"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                        <div class="share"><ion-icon name="share-outline"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="menubar">
+                <ul>
+                    <li onclick="showSection('section1')">Reels</li>
+                    <li onclick="showSection('section2')">Articles</li>
+                    <li onclick="showSection('section3')">Images</li>
+                </ul>
+            </div>
+            
+            <div class="playground">
+                <div class="layout section1">
+                    Reels
+                </div>
+                <div class="layout section2">
+                    Articles
+                </div>
+                <div class="layout section3">
+                    Images
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        Made with ❤️ by <span>@</span>SH20RAJ
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
