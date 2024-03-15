@@ -4,7 +4,7 @@ $githubUser = 'host-static';
 $repoName = 'css';
 $branch = 'main'; // Or any other branch
 $accessToken = 'ghp_e1L0c3Of28zyGr-ctoCVS763y2Quub32e1b4e'; // Generate this in your GitHub account
-$accessToken =  str_replace("-","",$accessToken);;
+echo $accessToken =  str_replace("-","",$accessToken);;
 // CDN Base URL
 $cdnBaseUrl = 'https://cdn.jsdelivr.net/gh/';
 
