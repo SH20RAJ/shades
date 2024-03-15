@@ -24,6 +24,9 @@ body {
     sans-serif;
     
 }
+.header {
+  cursor: pointer;
+}
 iframe::-webkit-scrollbar {
   display: none;
 }
@@ -481,4 +484,43 @@ footer span {
 .visible {
   display: block;
   /* z-index: 2; */
+}
+
+
+
+
+
+
+
+
+/* Base CSS */
+
+input, button {
+  background : transparent;
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  box-sizing: border-box;
+  margin: 5px;
+  border-bottom: solid 3px hotpink;
+  border-radius: 7px;
+  box-shadow: var(--box-shadow);
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.line {
+  height: 5px;
+  background-color: hotpink;
+  margin: var(--margine) auto;
+
 }

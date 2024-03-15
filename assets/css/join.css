@@ -1,0 +1,45 @@
+
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    text-align: center;
+}
+.login-container {
+    align-self: center;
+    margin-top: -100px;
+}
+.login-container form {
+    /* border: 2px solid; */
+    text-align: center;
+    padding: 2px;
+}
+.login-container form input {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 20px;
+    width: 100% ;
+    margin-left: 0px;
+}
+
+.login-container span {
+    display: inline-block;
+    margin: 40px;
+}
+
+.tabs {
+    display: flex;
+    gap: 2px;
+}
+.tabs button {
+    display: block;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid hotpink;
+    
+}
