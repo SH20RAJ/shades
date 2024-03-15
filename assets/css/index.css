@@ -519,8 +519,8 @@ button:hover {
 }
 
 .line {
-  height: 5px;
-  background-color: hotpink;
+  height: 2px;
+  background-color: red;
   margin: var(--margine) auto;
 
 }

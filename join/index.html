@@ -33,21 +33,64 @@
         </ul>
     </nav>
     <main>
-        <div class="login-container"><h1>Join Shades!</h1>
-                <div class="line"></div>
-            <form action="/api/join.php" method="post" id="registerForm">
-                
-                <input type="text" placeholder="Userame" id="username" name="username" required>
-                <input type="email" placeholder="Email" id="email" name="email" required>
-                <input type="password" placeholder="Password" id="pwd" name="pwd" required>
-                <button type="submit">Register</button>
-            </form>
-            <div class="tabs">
-                <button>Register</button>
-                <button>Login</button>
+        <!-- <div class="tabs hidden">
+            <button onclick="showSection('section1')">Register</button>
+            <button onclick="showSection('section2')">Login</button>
+        </div> -->
+        <div class="playground">
+            <div class="layout section1">
+                <div class="login-container">
+                    <h1>Join Shades!</h1>
+                    <div class="line"></div>
+                    <div class="tabs">
+                        <button onclick="showSection('section1')" style="border-bottom-color: red;">Register</button>
+                        <button onclick="showSection('section2')">Login</button>
+                    </div>
+                    <form action="/api/join.php" method="post" id="registerForm">
+
+                        <input type="text" placeholder="Userame" id="username" name="username" required>
+                        <input type="email" placeholder="Email" id="email" name="email" required>
+                        <input type="password" placeholder="Password" id="pwd" name="pwd" required>
+                        <button type="submit">Register</button>
+                    </form>
+
+                    <span>Already have an account? <a href="/login">Login here.</a></span>
+                </div>
             </div>
-            <span>Already have an account? <a href="/login">Login here.</a></span>
+            <div class="layout section2">
+                <div class="login-container">
+                    <h1>Join Shades!</h1>
+                    <div class="line"></div>
+                    <div class="tabs">
+                        <button onclick="showSection('section1')">Register</button>
+                        <button onclick="showSection('section2')" style="border-bottom-color: red;">Login</button>
+                    </div>
+                    <form action="/api/join.php" method="post" id="registerForm">
+
+                        <input type="text" placeholder="Userame or Email" id="username" name="username" required>
+                        <input type="password" placeholder="Password" id="pwd" name="pwd" required>
+                        <button type="submit">Login</button>
+                    </form>
+
+                    <span>Already have an account? <a href="/login">Login here.</a></span>
+                </div>
+            </div>
         </div>
+
+        <script>
+            function showSection(section) {
+                // Remove 'active' class from all sections
+                document.querySelectorAll('.playground .layout').forEach(function (el) {
+                    el.classList.remove('active');
+                });
+
+                // Add 'active' class to the selected section
+                document.querySelector(`.${section}`).classList.add('active');
+
+                // Scroll the selected section into view
+                document.querySelector(`.${section}`).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        </script>
     </main>
     <footer>
         Made with ❤️ by <span>@</span>SH20RAJ

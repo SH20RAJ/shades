@@ -1,6 +1,43 @@
+* {
+    box-sizing: border-box;
+}
 
+.playground {
+    text-wrap: nowrap;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    display: flex;
+    max-width: 500px;
+    align-self: center;
+    /* Added */
+}
+
+.playground .layout {
+    flex: 1 0 auto;
+    /* Added */
+    display: inline-block;
+    width: 100%;
+    margin: 4px;
+    height: 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the active section */
+.active {
+    border: 2px solid black;
+}
 main {
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     margin: auto;
@@ -9,7 +46,7 @@ main {
 }
 .login-container {
     align-self: center;
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 .login-container form {
     /* border: 2px solid; */
@@ -42,4 +79,8 @@ main {
     border: 0;
     border-bottom: 2px solid hotpink;
     
+}
+ input:hover {
+    /* background-color: transparent; */
+    border-color: red;
 }
