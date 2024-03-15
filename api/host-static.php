@@ -28,10 +28,10 @@ if (isset($_POST["submit"])) {
     // }
 
     // Allow certain file formats
-    if($imageFileType != "css") {
-        echo "Sorry, only CSS files are allowed.";
-        $uploadOk = 0;
-    }
+    // if($imageFileType != "css") {
+    //     echo "Sorry, only CSS files are allowed.";
+    //     $uploadOk = 0;
+    // }
 
     // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
