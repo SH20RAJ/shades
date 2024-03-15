@@ -19,9 +19,7 @@
     flex: 1 0 auto;
     /* Added */
     display: inline-block;
-    width: 100%;
-    margin: 4px;
-    height: 100%;
+
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
